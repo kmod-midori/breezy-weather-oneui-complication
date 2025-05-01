@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:initialLayout="@layout/glance_default_loading_layout"
     android:targetCellWidth="1"
-    android:targetCellHeight="1">
-
+    android:targetCellHeight="1"
+    app:previewLayoutTiny="@layout/glance_default_loading_layout"
+    app:targetHost="lock_and_aod"
+    app:widgetSize="tiny"
+    app:widgetStyle="monotone">
 </appwidget-provider>

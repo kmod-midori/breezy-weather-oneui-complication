@@ -2,6 +2,7 @@ package moe.reimu.oneuicomplications
 
 import android.content.Context
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.glance.GlanceId
@@ -39,9 +40,8 @@ class MyAppWidget : GlanceAppWidget() {
 
     @Composable
     private fun MyContent(context: Context) {
-        val bgColor = GlanceTheme.colors.background.getColor(context).copy(alpha = 0.25f)
+        val bgColor = Color(0.0f, 0.0f, 0.0f, 0.2f)
         val weatherInfo = WeatherReceiver.getWeatherData(context)
-
 
         Column(
             modifier = GlanceModifier.fillMaxSize().background(bgColor).cornerRadius(12.dp),
